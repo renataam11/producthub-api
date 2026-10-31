@@ -1,0 +1,62 @@
+{
+  "info": {
+    "_postman_id": "b49edb39-7647-4bf9-b909-495bd41869d0",
+    "name": "ProductHub API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55497127",
+    "_collection_link": "https://go.postman.co/collection/55497127-b49edb39-7647-4bf9-b909-495bd41869d0?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Root - Welcome",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}}",
+          "host": [
+            "{{host}}"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Root - Welcome",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}",
+              "host": [
+                "{{host}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Wed, 28 Oct 2026 19:24:18 GMT"
+            },
+            {
+              "key": "server",
+              "value": "uvicorn"
+            },
+            {
+              "key": "content-length",
+              "value": "39"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Welcome to ProductHub API\"\n}"
+        }
+      ]
+    }
+  ]
+}
