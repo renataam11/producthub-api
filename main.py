@@ -6,5 +6,10 @@ app = FastAPI() #instancia de la aplicacion
 def read_rot(): #ejecutara cuando alguien visite esa ruta
     return {"message": "Welcome to ProductHub API"} #FastAPI lo convierte automaticamente a JSON
 
+@app.get("/health")
+def health_check():
+    return{"status": "healthy"}
+
+
 
 

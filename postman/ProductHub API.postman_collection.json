@@ -21,7 +21,7 @@
       },
       "response": [
         {
-          "name": "Root - Welcome",
+          "name": "Root - Welcome 200 OK",
           "originalRequest": {
             "method": "GET",
             "header": [],
@@ -55,6 +55,60 @@
           ],
           "cookie": [],
           "body": "{\n  \"message\": \"Welcome to ProductHub API\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Health test",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}}",
+          "host": [
+            "{{host}}"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Health test 200 OK",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/health",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Sat, 31 Oct 2026 20:18:13 GMT"
+            },
+            {
+              "key": "server",
+              "value": "uvicorn"
+            },
+            {
+              "key": "content-length",
+              "value": "20"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"status\": \"healthy\"\n}"
         }
       ]
     }
