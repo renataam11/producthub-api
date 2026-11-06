@@ -27,6 +27,10 @@ def create_product(product:Product):
 
     return new_product
 
+@app.get("/products")
+def get_products():
+    return products
+
 
 
 
